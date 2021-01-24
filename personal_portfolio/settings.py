@@ -124,3 +124,8 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media' # makes it so every media file is saved to the media folder
+
+try:
+    from .local_settings import *
+except ImportError:
+    print("looks like you are in production")
