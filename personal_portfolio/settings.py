@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'zl@8wf$=$7_k9snx=bb(=6^fpf1%o!59e*-*cwwot(h^)z=hy5'
+SECRET_KEY = 'joFwh2.@$zga}4f`gAz|ae*89Z@@^6Af|s$jS_fuA~3%xs)hxA'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['codingwithjbear.pythonanywhere.com']
 
 
 # Application definition
@@ -120,6 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media' # makes it so every media file is saved to the media folder 
+MEDIA_ROOT = BASE_DIR / 'media' # makes it so every media file is saved to the media folder
